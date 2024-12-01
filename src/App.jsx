@@ -1,15 +1,27 @@
 import React from 'react'
-import Navbar from './components/Navbar/Navbar'
-import Hero from './components/Hero/Hero'
-import Footer from './components/Footer/Footer'
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home'
+const routes = [
+  { path: "/", element: <Home /> },
+  ,
+];
 
 const App = () => {
+
+
+ 
+  
   return (
+    <Router>
     <div>
-      <Navbar/>
-      <Hero/>
-      <Footer/>
+      <Routes>
+        {routes.map(({ path, element }, index) => (
+          <Route key={index} path={path} element={element} />
+        ))}
+      </Routes>
     </div>
+    </Router>
   )
 }
 
