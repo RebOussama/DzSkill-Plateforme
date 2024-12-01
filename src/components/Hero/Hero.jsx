@@ -21,7 +21,7 @@ const HeroSection = () => {
             Making Learning Easy, Anytime, Anywhere
           </h1>
           <p className="text-lg text-gray-600">
-            Empower your growth with engaging courses and resources—all from the comfort of your own space.
+            Empower your growth with engaging courses and resources—all from the comfort of your own space .
           </p>
         </div>
 
