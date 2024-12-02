@@ -15,6 +15,7 @@ const App = () => {
  
   
   return (
+    <Router>
     <div>
       <Routes>
         {routes.map(({ path, element }, index) => (
@@ -22,6 +23,7 @@ const App = () => {
         ))}
       </Routes>
     </div>
+    </Router>
   )
 }
 
