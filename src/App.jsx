@@ -2,8 +2,10 @@ import React from 'react'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home'
+import CourseContent from './pages/CourseContent';
 const routes = [
   { path: "/", element: <Home /> },
+  { path: "/coursecontent", element: <CourseContent /> },
   ,
 ];
 
