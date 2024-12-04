@@ -45,7 +45,7 @@ const PopularCourses = () => {
   return (
     <div className="bg-white py-8">
       <h2 className="text-2xl font-bold mb-4 text-purple text-center">Courses Related to <span className='text-black'>“AI”</span></h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 overflow-x-auto hide-scrollbar">
         {courses.map((course, index) => (
           <div
             key={index}

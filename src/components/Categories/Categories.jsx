@@ -40,21 +40,21 @@ const Categories = () => {
         <h2 className="text-4xl font-bold mb-8 text-purple text-center">Categories</h2>
         {/* Scrollable container with hidden scrollbar */}
         <div className="flex md:grid md:grid-cols-3 gap-8 overflow-x-auto hide-scrollbar">
-  {categories.map((category, index) => (
-    <div
-      key={index}
-      className="relative bg-gray-100 flex-shrink-0 md:flex-shrink rounded-lg overflow-hidden shadow-md w-64 md:w-auto"
-    >
-      {/* Text positioned on top of the image */}
-      <h3 className="absolute top-0 left-0 w-full text-[32px] font-thin mb-2 text-white p-4">
-        {category.title}
-      </h3>
-      {/* Image fills the card */}
-      <img
-        src={category.image}
-        className="h-full w-full object-cover"
-      />
-    </div>
+            {categories.map((category, index) => (
+              <div
+                key={index}
+                className="relative bg-gray-100 flex-shrink-0 md:flex-shrink rounded-lg overflow-hidden shadow-md w-64 md:w-auto"
+              >
+                {/* Text positioned on top of the image */}
+                <h3 className="absolute top-0 left-0 w-full text-[32px] font-thin mb-2 text-white p-4">
+                  {category.title}
+                </h3>
+                {/* Image fills the card */}
+                <img
+                  src={category.image}
+                  className="h-full w-full object-cover"
+                />
+              </div>
   ))}
 </div>
 
