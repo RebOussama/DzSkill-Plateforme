@@ -4,6 +4,7 @@ import ara from '../../assets/fr.png'; // Assuming you have an Arabic flag icon
 import { IoMdMenu } from 'react-icons/io';
 import { IoIosArrowDown } from "react-icons/io";
 import NavRes from "./NavbarResponsive";
+import { Link } from "react-router-dom";
 
 const NavLinks = [
   { id: 1, name: { en: "Home", ar: "الرئيسية" }, link: "/" },
@@ -30,16 +31,16 @@ const Navbar = () => {
       <div className="bg-white py-12 px-20"> {/* Adjusted padding */}
         <div className="flex justify-between items-center">
           {/* Logo section */}
-          <div className="font-bold text-5xl">Dz-Skills</div> {/* Adjusted font size */}
+          <Link to='/' className="font-bold text-5xl">Dz-Skills</Link> {/* Adjusted font size */}
 
           {/* Nav Links section */}
           <div className="hidden md:block w-[45rem] h-[3rem]"> {/* Adjusted height */}
             <ul className="flex items-center gap-8 text-xl"> {/* Adjusted gap and text size */}
               {NavLinks.map(({ id, name, link }) => (
                 <li key={id}>
-                  <a href={link} className="hover:text-purple whitespace-nowrap flex-shrink-0">
+                  <Link to={link}  className="hover:text-purple whitespace-nowrap flex-shrink-0">
                     {name[language]}
-                  </a>
+                  </Link>
                 </li>
               ))}
 
