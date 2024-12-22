@@ -4,11 +4,13 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home'
 import CourseContent from './pages/CourseContent';
 import Courses from './pages/Courses'
+import Question from './pages/Question';
 import './App.css'
 const routes = [
   { path: "/", element: <Home /> },
   { path: "/coursecontent", element: <CourseContent /> },
   { path: "/courses", element: <Courses /> },
+  { path : "/question", element: <Question />}
 
   
   ,
