@@ -15,6 +15,8 @@ export default {
         gris4: "#666666",
         black: "#000000",
         black2: "#262626",
+        black3: "#333232",
+        blue: "#663AF8",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
