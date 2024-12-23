@@ -5,7 +5,6 @@ import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import CourseImg from '../assets/CourseContent.png'
 import BackgroundImg from '../assets/Group 25.png'
-import { div } from 'framer-motion/client';
 const CourseInfo = {
     Title: 'Build Responsive Real-World Websites with HTML and CSS',
     Instructor: 'Faycel Azouaou',
@@ -27,11 +26,6 @@ const CourseInfo = {
 }
 
 
-const categories = [
-    { name: 'Category 1', subCategories: ['Subcategory 1-1', 'Subcategory 1-2'] },
-    { name: 'Category 2', subCategories: ['Subcategory 2-1', 'Subcategory 2-2'] },
-    { name: 'Category 3', subCategories: ['Subcategory 3-1', 'Subcategory 3-2'] },
-  ];
 
 
 

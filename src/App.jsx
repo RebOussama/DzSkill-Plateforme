@@ -6,11 +6,15 @@ import CourseContent from './pages/CourseContent';
 import Courses from './pages/Courses'
 import Question from './pages/Question';
 import './App.css'
+import MyCourses from './pages/MyCourses';
 const routes = [
   { path: "/", element: <Home /> },
   { path: "/coursecontent", element: <CourseContent /> },
   { path: "/courses", element: <Courses /> },
-  { path : "/question", element: <Question />}
+  { path: "/courses/:id", element: <CourseContent /> },
+  { path : "/question", element: <Question />},
+  { path : "/mycourses", element:<MyCourses />}
+
 
   
   ,
