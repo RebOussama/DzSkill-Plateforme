@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar/Navbar'
 import Footer from '../components/Footer/Footer'
 import UploadedCourse from '../components/UploadedCourse/UploadedCourse'
 import { BsPlusCircle } from "react-icons/bs";
+import { Link } from 'react-router-dom'
 const listMyCourses = [
   { id: "1", title: "Course 1", category: "Category 1", price: "$100", level: "Beginner", certification: "available", description: "Description 1" },
   { id: "2", title: "Course 2", category: "Category 2", price: "$200", level: "Intermediate", certification: "not available", description: "Description 2" },
@@ -59,7 +60,10 @@ const MyCourses = () => {
         <div className='w-[70%] bg-white shadow-md rounded-2xl flex min-h-[300px]  '>
           <div className='md:w-[65%] w-full flex flex-col p-8 items-center gap-20'>
             <h1 className='font-bold md:text-2xl text-xl'>Add a course</h1>
+            <Link to='/createcourse'>
             <BsPlusCircle className='text-[#D9D9D9] hover:text-purple cursor-pointer' size={90} />
+            
+            </Link>
 
           </div>
           <div className='bg-[#C4C4C4] md:w-[35%] w-0 rounded-2xl md:block hidden'>

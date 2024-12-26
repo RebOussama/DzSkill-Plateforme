@@ -7,13 +7,19 @@ import Courses from './pages/Courses'
 import Question from './pages/Question';
 import './App.css'
 import MyCourses from './pages/MyCourses';
+import CreateCourse from './pages/CreateCourse';
+import UploadLesson from './pages/UploadLesson';
 const routes = [
   { path: "/", element: <Home /> },
   { path: "/coursecontent", element: <CourseContent /> },
   { path: "/courses", element: <Courses /> },
   { path: "/courses/:id", element: <CourseContent /> },
   { path : "/question", element: <Question />},
-  { path : "/mycourses", element:<MyCourses />}
+  { path : "/mycourses", element:<MyCourses />},
+  { path : "/createcourse", element:<CreateCourse />},
+  { path : "/uploadlesson", element:<UploadLesson />}
+
+
 
 
   
