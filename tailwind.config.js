@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        img9: "url('./assets/img9.png')",
+      },
       colors: {
         white: "#ffffff",
         purple: "#9747FF",
@@ -13,6 +16,7 @@ export default {
         gris2: "#CCCCCC",
         gris3: "#979797",
         gris4: "#666666",
+        gris5: "#5B5B5B",
         black: "#000000",
         black2: "#262626",
         black3: "#333232",

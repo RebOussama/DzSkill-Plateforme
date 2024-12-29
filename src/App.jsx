@@ -9,6 +9,12 @@ import './App.css'
 import MyCourses from './pages/MyCourses';
 import CreateCourse from './pages/CreateCourse';
 import UploadLesson from './pages/UploadLesson';
+import Article from './pages/Article';
+import Filter from './pages/Filter';
+import Congratulation from './pages/Congratulation';
+import ProfileDetails from './pages/ProfileDetails';
+import ProfileDetails2 from './pages/ProfileDetails2';
+import MyCourses from './pages/MyCourses';
 const routes = [
   { path: "/", element: <Home /> },
   { path: "/coursecontent", element: <CourseContent /> },
@@ -17,7 +23,13 @@ const routes = [
   { path : "/question", element: <Question />},
   { path : "/mycourses", element:<MyCourses />},
   { path : "/createcourse", element:<CreateCourse />},
-  { path : "/uploadlesson", element:<UploadLesson />}
+  { path : "/uploadlesson", element:<UploadLesson />},
+  { path : "/article", element: <Article />},
+  { path : "/filter", element: <Filter /> },
+  { path : "/congratulation", element: <Congratulation />},
+  { path : "/profiledetails", element: <ProfileDetails />},
+  { path : "/profiledetails2", element: <ProfileDetails2 />},
+  { path : "/mycourses", element: <MyCourses />}
 
 
 
