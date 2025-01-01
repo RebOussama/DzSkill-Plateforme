@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="bg-white py-12 px-20"> {/* Adjusted padding */}
+      <div className="bg-white py-8 px-20"> {/* Adjusted padding */}
         <div className="flex justify-between items-center">
           {/* Logo section */}
           <Link to='/' className="font-bold text-5xl">Dz-Skills</Link> {/* Adjusted font size */}

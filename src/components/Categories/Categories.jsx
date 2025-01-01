@@ -43,7 +43,7 @@ const Categories = () => {
             {categories.map((category, index) => (
               <div
                 key={index}
-                className="relative bg-gray-100 flex-shrink-0 md:flex-shrink rounded-lg overflow-hidden shadow-md w-64 md:w-auto"
+                className="relative bg-gray-100 flex-shrink-0 md:flex-shrink rounded-lg overflow-hidden hide-scrollbar shadow-md w-64 md:w-auto"
               >
                 {/* Text positioned on top of the image */}
                 <h3 className="absolute top-0 left-0 w-full text-[32px] font-thin mb-2 text-white p-4">
