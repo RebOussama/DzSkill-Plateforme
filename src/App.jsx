@@ -13,6 +13,8 @@ import MyCourses from './pages/MyCourses';
 import CreateCourse from './pages/CreateCourse';
 import UploadLesson from './pages/UploadLesson';
 import MyCourses2 from './pages/MyCourses2'; // Keep this import, it was missing after conflict resolution
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 
 const routes = [
   { path: "/", element: <Home /> },
@@ -28,7 +30,10 @@ const routes = [
   { path: "/congratulation", element: <Congratulation /> },
   { path: "/profiledetails", element: <ProfileDetails /> },
   { path: "/profiledetails2", element: <ProfileDetails2 /> },
-  { path: "/mycourses2", element: <MyCourses2 /> } // Keep this route
+  { path: "/mycourses2", element: <MyCourses2 /> }, // Keep this route
+  { path: "/login", element: <Login /> },
+  { path: "/signup", element: <Signup /> }
+
 ];
 
 const App = () => {

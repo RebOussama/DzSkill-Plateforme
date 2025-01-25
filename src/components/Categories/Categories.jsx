@@ -5,32 +5,39 @@ import img3 from '../../assets/img3.png';
 import img4 from '../../assets/img4.png';
 import img5 from '../../assets/img5.png';
 import img6 from '../../assets/img6.png';
+import { Link } from 'react-router-dom';
 
 const Categories = () => {
   const categories = [
     {
       title: 'Technology & Engineering',
       image: img1,
+      link:'/courses'
     },
     {
       title: 'Marketing & Business',
       image: img2,
+      link:'/courses'
     },
     {
       title: 'Languages & Communication',
       image: img3,
+      link:'/courses'
     },
     {
       title: 'Design & Creativity',
       image: img4,
+      link:'/courses'
     },
     {
       title: 'Computer Science & Programming',
       image: img5,
+      link:'/courses'
     },
     {
       title: 'Health & Fitness',
       image: img6,
+      link:'/courses'
     },
   ];
 
@@ -41,7 +48,7 @@ const Categories = () => {
         {/* Scrollable container with hidden scrollbar */}
         <div className="flex md:grid md:grid-cols-3 gap-8 overflow-x-auto hide-scrollbar">
             {categories.map((category, index) => (
-              <div
+              <Link to={category.link}
                 key={index}
                 className="relative bg-gray-100 flex-shrink-0 md:flex-shrink rounded-lg overflow-hidden hide-scrollbar shadow-md w-64 md:w-auto"
               >
@@ -54,7 +61,7 @@ const Categories = () => {
                   src={category.image}
                   className="h-full w-full object-cover"
                 />
-              </div>
+              </Link>
   ))}
 </div>
 
