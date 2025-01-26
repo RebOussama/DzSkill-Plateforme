@@ -52,6 +52,11 @@ export const createTeacher = createAsyncThunk(
         const { token } = response.data; // Assuming the server returns a token
         localStorage.setItem('authToken', token); // Save token to localStorage
         localStorage.setItem('role', role);
+        localStorage.setItem('userID', response.data.userID); // Save userID to localStorage
+
+
+        
+
         return response.data;
       } catch (error) {
         console.error(error);
@@ -70,6 +75,8 @@ const authSlice = createSlice({
     success: false,
     token: localStorage.getItem('authToken') || null, // Load token from localStorage
     role: localStorage.getItem('role') || null, // Load role from localStorage
+    userID: localStorage.getItem('userID') || null, // Load userID from localStorage
+
   },
   reducers: {
     resetState: (state) => {
@@ -82,6 +89,7 @@ const authSlice = createSlice({
         state.role = null;
         localStorage.removeItem('authToken'); // Remove token from localStorage
         localStorage.removeItem('role'); // Remove role from localStorage
+        localStorage.removeItem('userID'); // Remove username from localStorage
     },
   },
   extraReducers: (builder) => {
@@ -97,6 +105,8 @@ const authSlice = createSlice({
         state.success = true;
         state.token = action.payload.token; // Store token in Redux state
         state.role = action.meta.arg.role; // Store role in Redux state
+        state.userID = action.payload.userID; // Store userID in Redux state
+
       })
       .addCase(login.rejected, (state, action) => {
         state.loading = false;

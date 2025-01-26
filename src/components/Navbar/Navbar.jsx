@@ -42,17 +42,20 @@ const Navbar = () => {
   // Navigation Links
   const NavLinks = [
     { id: 1, name: { en: "Home", ar: "الرئيسية" }, link: "/" },
-    { id: 2, name: { en: "About us", ar: "معلومات عنا" }, link: "/about" },
+    { id: 2, name: { en: "Courses", ar: "الدورات" }, link: "/courses" },
+    { id: 3, name: { en: "About us", ar: "معلومات عنا" }, link: "/about" },
   ];
 
   const StudentLinks = [
     { id: 1, name: { en: "Home", ar: "الرئيسية" }, link: "/" },
-    { id: 2, name: { en: "My Learning", ar: "تعلّمي" }, link: "/mycourses2" },
+    { id: 2, name: { en: "Courses", ar: "الدورات" }, link: "/courses" },
+    { id: 3, name: { en: "My Learning", ar: "تعلّمي" }, link: "/mycourses2" },
   ];
 
   const TeacherLinks = [
     { id: 1, name: { en: "Home", ar: "الرئيسية" }, link: "/" },
-    { id: 2, name: { en: "My Courses", ar: "دوراتي" }, link: "/mycourses" },
+    { id: 2, name: { en: "Courses", ar: "الدورات" }, link: "/courses" },
+    { id: 3, name: { en: "My Courses", ar: "دوراتي" }, link: "/mycourses" },
   ];
 
   return (
